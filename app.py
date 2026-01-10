@@ -1,13 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return "Bienvenido a Desarrollo Web Pedro Alcz"
+def inicio():
+    return render_template("index.html")
 
 @app.route("/pedro-alcz")
 def pedro():
     return render_template("pedro.html")
-
-
