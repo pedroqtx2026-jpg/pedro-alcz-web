@@ -8,5 +8,6 @@ def home():
 
 @app.route("/pedro-alcz")
 def pedro():
-    return "Ruta personalizada Pedro Alcz"
+    return render_template("pedro.html")
+
 
